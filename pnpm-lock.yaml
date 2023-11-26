@@ -5,12 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@nextui-org/button':
-    specifier: ^2.0.26
-    version: 2.0.26(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(framer-motion@10.16.5)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.18)
-  '@nextui-org/image':
-    specifier: ^2.0.24
-    version: 2.0.24(@nextui-org/system@2.0.15)(@nextui-org/theme@2.1.17)(react-dom@18.2.0)(react@18.2.0)
   '@nextui-org/react':
     specifier: ^2.2.9
     version: 2.2.9(@types/react@18.2.38)(framer-motion@10.16.5)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.18)(tailwindcss@3.3.5)
@@ -32,6 +26,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
+  use-dark-mode:
+    specifier: ^2.3.1
+    version: 2.3.1(react@18.2.0)
 
 devDependencies:
   '@types/node':
@@ -2652,6 +2649,14 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
+  /@use-it/event-listener@0.1.7(react@18.2.0):
+    resolution: {integrity: sha512-hgfExDzUU9uTRTPDCpw2s9jWTxcxmpJya3fK5ADpf5VDpSy8WYwY/kh28XE0tUcbsljeP8wfan48QvAQTSSa3Q==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /acorn-jsx@5.3.2(acorn@8.11.2):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -4987,6 +4992,16 @@ packages:
       react: 18.2.0
     dev: false
 
+  /use-dark-mode@2.3.1(react@18.2.0):
+    resolution: {integrity: sha512-hmcdJR96tTustRQdaQwe6jMrZHnmPqXBxgy4jaQ4gsfhwajsCpjECuq9prgDe9XxMx/f9r96o2/md6O4Lwhwjg==}
+    peerDependencies:
+      react: ^16.8.0
+    dependencies:
+      '@use-it/event-listener': 0.1.7(react@18.2.0)
+      react: 18.2.0
+      use-persisted-state: 0.3.3(react@18.2.0)
+    dev: false
+
   /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.38)(react@18.2.0):
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
@@ -5012,6 +5027,15 @@ packages:
       '@types/react': 18.2.38
       react: 18.2.0
       use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.38)(react@18.2.0)
+    dev: false
+
+  /use-persisted-state@0.3.3(react@18.2.0):
+    resolution: {integrity: sha512-pCNlvYC8+XjRxwnIut4teGC9f2p9aD88R8OGseQGZa2dvqG/h1vEGk1vRE1IZG0Vf161UDpn+NlW4+UGubQflQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@use-it/event-listener': 0.1.7(react@18.2.0)
+      react: 18.2.0
     dev: false
 
   /use-sidecar@1.1.2(@types/react@18.2.38)(react@18.2.0):
