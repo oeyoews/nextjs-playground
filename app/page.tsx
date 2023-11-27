@@ -24,10 +24,12 @@ import {
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import ModeToggle from '@/components/DarkMode';
 
 export default function DialogCloseButton() {
   return (
     <>
+      <ModeToggle />
       <Dialog>
         <DialogTrigger asChild>
           <Button variant="outline">Share</Button>
