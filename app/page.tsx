@@ -1,6 +1,3 @@
-import Button from './Button';
-import Link from 'next/link';
-import Refresh from './Reload';
 import Reload from './Reload';
 
 export default function page({
@@ -10,13 +7,14 @@ export default function page({
     id?: string;
   };
 }) {
-  if (!searchParams?.id) {
-    return <div>empty {searchParams?.id}</div>;
-  }
+  // if (!searchParams?.id) {
+  //   return <div>empty {searchParams?.id}</div>;
+  // }
   return (
-    <div>
-      <Button />
+    <div className="space-x-2 min-h-screen">
       <Reload />
+      <hr />
+      <div>searchParams: {JSON.stringify(searchParams, null, 2)}</div>
     </div>
   );
 }
