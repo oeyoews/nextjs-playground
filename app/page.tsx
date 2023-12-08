@@ -1,5 +1,6 @@
 import Button from './Button';
 import Link from 'next/link';
+import Refresh from './Refresh';
 
 export default function page({
   searchParams,
@@ -14,7 +15,7 @@ export default function page({
   return (
     <div>
       <Button />
-      <Link href="/?id=1"></Link>
+      <Refresh />
     </div>
   );
 }
