@@ -1,6 +1,7 @@
 import Button from './Button';
 import Link from 'next/link';
-import Refresh from './Refresh';
+import Refresh from './Reload';
+import Reload from './Reload';
 
 export default function page({
   searchParams,
@@ -15,7 +16,7 @@ export default function page({
   return (
     <div>
       <Button />
-      <Refresh />
+      <Reload />
     </div>
   );
 }
