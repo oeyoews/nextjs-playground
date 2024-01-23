@@ -1,9 +1,13 @@
+'use client';
+
 export default function Home() {
-  const debounce = () => {};
-  const throotle = () => {};
+  const handlePress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    console.log(e.key);
+  };
+
   return (
-    <form>
-      <input />
-    </form>
+    <div>
+      <input type="text" onKeyDown={handlePress} />
+    </div>
   );
 }
